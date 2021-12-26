@@ -4,3 +4,9 @@
 [submodule "3rd-party/pico-examples"]
 	path = 3rd-party/pico-examples
 	url = https://github.com/raspberrypi/pico-examples.git
+[submodule "3rd-party/st7789_library_for_pico"]
+	path = 3rd-party/st7789_library_for_pico
+	url = https://github.com/ArmDeveloperEcosystem/st7789-library-for-pico.git
+[submodule "3rd-party/lvgl"]
+	path = 3rd-party/lvgl
+	url = https://github.com/lvgl/lvgl.git

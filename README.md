@@ -11,7 +11,26 @@
 参考项目：
 
 - LVGL_SUB_Mouse：https://github.com/k-ying/LVGL_USB_Mouse
+- 
 
 
 
 ![UART0 引脚图](https://gitee.com/jackis/blog-images/raw/master/images/image-20211225215958828.png)
+
+
+
+![HID Descriptor](https://gitee.com/jackis/blog-images/raw/master/images/image-20211225230833406.png)
+
+
+
+Main item type: 
+
+- Input item tag
+- Output
+- Feature
+- Collection
+- End Collection
+
+Local item 描述下一个 Main item。
+
+Global item 成为描述符中后续数据属性的默认值。
