@@ -1,0 +1,7 @@
+{
+    "cmake.generator": "NMake Makefiles",
+    "files.associations": {
+        "lvgl.h": "c",
+        "tusb.h": "c"
+    }
+}

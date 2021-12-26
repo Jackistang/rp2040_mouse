@@ -6,6 +6,19 @@
 
 
 
+配置 VSCode 环境：getting-started-with-pico.pdf - 9.2.4
+
+```shell
+Generator:
+	cmake -H. -Bbuild  -G "NMake Makefiles"
+Compiler:
+	cmake --build build
+```
+
+
+
+
+
 ----
 
 参考项目：
