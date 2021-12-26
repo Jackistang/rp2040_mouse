@@ -10,3 +10,6 @@
 [submodule "3rd-party/lvgl"]
 	path = 3rd-party/lvgl
 	url = https://github.com/lvgl/lvgl.git
+[submodule "3rd-party/MultiButton"]
+	path = 3rd-party/MultiButton
+	url = https://github.com/0x1abin/MultiButton.git
