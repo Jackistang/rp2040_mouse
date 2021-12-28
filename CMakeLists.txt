@@ -9,22 +9,33 @@ project(rp2040_mouse VERSION 0.1.0)
 # Initialize the SDK
 pico_sdk_init()
 
-set(FAMILY rp2040)
-set(BOARD pico_sdk)
+# Set custom board header.
+set(ENV{PICO_BOARD_HEADER_DIRS} ${CMAKE_CURRENT_LIST_DIR}/src)
+set(PICO_BOARD Gamekit_rp2040)
+
+# set(FAMILY rp2040)
+# set(BOARD pico_sdk)
 
 set(CONFIG_USING_LVGL       NO)
 set(CONFIG_USING_TINYUSB    NO)
 
-set(TINYUSB_FAMILY_PROJECT_NAME_PREFIX "tinyusb_dev_")
-
 add_subdirectory("3rd-party/st7789_library_for_pico")
 
-add_executable(rp2040_mouse
-    src/main.c
-)
+set(SOURCES src/main.c
+            3rd-party/MultiButton/multi_button.c)
+
+if (${CONFIG_USING_TINYUSB})
+    set(TINYUSB_FAMILY_PROJECT_NAME_PREFIX "tinyusb_dev_")
+    list(APPEND SOURCES src/usb_descriptors.c)
+endif()
+
+add_executable(rp2040_mouse ${SOURCES} )
+
+# src/usb_descriptors.c
 
 target_include_directories(rp2040_mouse PUBLIC
     ${CMAKE_CURRENT_LIST_DIR}/src
+    ${CMAKE_CURRENT_LIST_DIR}/3rd-party/MultiButton
 )
 
 target_link_libraries(rp2040_mouse PRIVATE

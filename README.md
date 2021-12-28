@@ -47,3 +47,16 @@ Main item type:
 Local item 描述下一个 Main item。
 
 Global item 成为描述符中后续数据属性的默认值。
+
+
+
+![](https://gitee.com/jackis/blog-images/raw/master/images/image-20211226192824840.png)
+
+
+
+![](https://gitee.com/jackis/blog-images/raw/master/images/image-20211227204248776.png)
+
+- HID 整体流程理解：https://zhuanlan.zhihu.com/p/27568561
+- HID Usage 理解：https://blog.csdn.net/hzt12345hf/article/details/51995042
+- HID Collection 理解：
+

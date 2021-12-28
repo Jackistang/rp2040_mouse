@@ -2,6 +2,11 @@
     "cmake.generator": "NMake Makefiles",
     "files.associations": {
         "lvgl.h": "c",
-        "tusb.h": "c"
+        "tusb.h": "c",
+        "stdio.h": "c",
+        "board.h": "c",
+        "sio.h": "c",
+        "pico.h": "c",
+        "st7789.h": "c"
     }
 }

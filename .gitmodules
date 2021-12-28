@@ -13,3 +13,10 @@
 [submodule "3rd-party/MultiButton"]
 	path = 3rd-party/MultiButton
 	url = https://github.com/0x1abin/MultiButton.git
+[submodule "3rd-party/picoprobe"]
+	path = 3rd-party/picoprobe
+	url = https://github.com/raspberrypi/picoprobe.git
+[submodule "3rd-party/openocd"]
+	path = 3rd-party/openocd
+	url = https://github.com/raspberrypi/openocd.git
+	branch = rp2040
