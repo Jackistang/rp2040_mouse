@@ -1,12 +1,22 @@
 {
-    "cmake.generator": "NMake Makefiles",
-    "files.associations": {
-        "lvgl.h": "c",
-        "tusb.h": "c",
-        "stdio.h": "c",
-        "board.h": "c",
-        "sio.h": "c",
-        "pico.h": "c",
-        "st7789.h": "c"
-    }
+    // These settings tweaks to the cmake plugin will ensure
+    // that you debug using cortex-debug instead of trying to launch
+    // a Pico binary on the host
+    "cmake.statusbar.advanced": {
+        "debug": {
+            "visibility": "hidden"
+        },
+        "launch": {
+            "visibility": "hidden"
+        },
+        "build": {
+            "visibility": "hidden"
+        },
+        "buildTarget": {
+            "visibility": "hidden"
+        }
+    },
+    "cmake.buildBeforeRun": true,
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "cortex-debug.openocdPath": "/home/tangjia/Jackistang/rp2040_mouse/tools/openocd/src/openocd"
 }
