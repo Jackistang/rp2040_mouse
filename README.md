@@ -6,14 +6,21 @@
 
 
 
-配置 VSCode 环境：getting-started-with-pico.pdf - 9.2.4
-
 PICO-SDK Linux 环境搭建（Using Picoprobe）：
 
-1. 参照 getting-started-with-pico.pdf - Chapter 2 安装 SDK 以及相应的工具链。
+1. 参照 getting-started-with-pico.pdf - Chapter 2 安装 SDK 以及相应的工具链，并添加环境变量 PICO_SDK_PATH 。
 2. 参照文章 [Raspberry Pi Pico and RP2040 - C/C++ Part 2: Debugging with VS Code](https://www.digikey.bg/en/maker/projects/raspberry-pi-pico-and-rp2040-cc-part-2-debugging-with-vs-code/470abc7efb07432b82c95f6f67f184c0) 搭建 OpenOCD (RP2040 版本) 环境和配置 VSCode 工程。
 
-【注意事项】：Ubuntu 18.04 arm-none-eabi-gdb 没有加入 apt 源，需要手动从源码编译，参考：[解决ubuntu18安装arm-none-eabi-gdb问题](https://zhuanlan.zhihu.com/p/134031693)。
+【注意事项】：
+
+1. Ubuntu 18.04 arm-none-eabi-gdb 没有加入 apt 源，需要手动从源码编译，参考：[解决ubuntu18安装arm-none-eabi-gdb问题](https://zhuanlan.zhihu.com/p/134031693)。
+2. 更改 launch.json 和 setting.json 文件，如下图所示。
+
+![launch.json](https://gitee.com/jackis/blog-images/raw/master/images/image-20211229140516774.png)
+
+![settings.json](https://gitee.com/jackis/blog-images/raw/master/images/image-20211229140615214.png)
+
+
 
 ----
 
