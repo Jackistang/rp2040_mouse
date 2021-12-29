@@ -1,9 +1,3 @@
-[submodule "3rd-party/pico-sdk"]
-	path = 3rd-party/pico-sdk
-	url = https://github.com/raspberrypi/pico-sdk.git
-[submodule "3rd-party/pico-examples"]
-	path = 3rd-party/pico-examples
-	url = https://github.com/raspberrypi/pico-examples.git
 [submodule "3rd-party/st7789_library_for_pico"]
 	path = 3rd-party/st7789_library_for_pico
 	url = https://github.com/ArmDeveloperEcosystem/st7789-library-for-pico.git
@@ -13,10 +7,16 @@
 [submodule "3rd-party/MultiButton"]
 	path = 3rd-party/MultiButton
 	url = https://github.com/0x1abin/MultiButton.git
-[submodule "3rd-party/picoprobe"]
-	path = 3rd-party/picoprobe
-	url = https://github.com/raspberrypi/picoprobe.git
-[submodule "3rd-party/openocd"]
-	path = 3rd-party/openocd
+[submodule "tools/pico-sdk"]
+	path = tools/pico-sdk
+	url = https://github.com/raspberrypi/pico-sdk.git
+[submodule "tools/pico-examples"]
+	path = tools/pico-examples
+	url = https://github.com/raspberrypi/pico-examples.git
+[submodule "tools/openocd"]
+	path = tools/openocd
 	url = https://github.com/raspberrypi/openocd.git
 	branch = rp2040
+[submodule "tools/picoprobe"]
+	path = tools/picoprobe
+	url = https://github.com/raspberrypi/picoprobe.git
