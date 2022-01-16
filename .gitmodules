@@ -20,3 +20,6 @@
 [submodule "tools/picoprobe"]
 	path = tools/picoprobe
 	url = https://github.com/raspberrypi/picoprobe.git
+[submodule "tools/pico-debug"]
+	path = tools/pico-debug
+	url = https://github.com/majbthrd/pico-debug.git
